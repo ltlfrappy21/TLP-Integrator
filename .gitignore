@@ -57,3 +57,7 @@ yarn-error.log
 
 # Notion system files
 notion/.DS_Store
+# macOS system files
+.DS_Store
+notion/.DS_Store
+
