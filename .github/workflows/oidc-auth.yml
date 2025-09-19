@@ -1,0 +1,21 @@
+name: OIDC Secure Publish
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS Credentials via OIDC
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          role-to-assume: arn:aws:iam::<your-account-id>:role/github-hive-publisher
+          aws-region: us-east-1
+
+      - name: Publish Artifacts
+        run: ./scripts/publish-artifacts.sh
