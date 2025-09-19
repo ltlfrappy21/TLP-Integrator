@@ -61,3 +61,10 @@ notion/.DS_Store
 .DS_Store
 notion/.DS_Store
 
+
+# Ignore ZIP artifacts and seed bundle
+TLP-Integrator.zip
+TLP-Integrator-seed-bundle/
+TLP-Integrator-seed-bundle.zip
+*.DS_Store
+__MACOSX
