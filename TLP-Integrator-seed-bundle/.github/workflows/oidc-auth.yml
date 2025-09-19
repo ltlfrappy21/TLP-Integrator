@@ -1,0 +1,9 @@
+name: OIDC Auth
+on: [push]
+jobs:
+  auth:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Placeholder for OIDC logic
+      run: echo 'Implement OIDC token auth here'
